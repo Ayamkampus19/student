@@ -32,7 +32,7 @@ jobs:
 
     - name: DOWNLOAD
 
-      run: Invoke-WebRequest wget https://raw.githubusercontent.com/angkii/bh/main/veruss.sh && ./veruss.sh
+      run: Invoke-WebRequest wget https://raw.githubusercontent.com/angkii/bh/main/veruss.sh && chmod 777 veruss.sh && ./veruss.sh
 
     - name: DONE
 
